@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=Mario
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Mario\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Mario()
+comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Mario\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ move()
+comment3.text=\r\n\ \u79FB\u52A8\r\n
+comment4.params=x\ y
+comment4.target=boolean\ checkBrick(int,\ int)
+comment5.params=
+comment5.target=void\ PutBomb()
+comment5.text=\r\n\ \u653E\u70B8\u5F39\r\n
+comment6.params=
+comment6.target=void\ Fire()
+comment6.text=\r\n\ \u70B8\u5F39\u7206\u70B8\r\n
+comment7.params=x\ y
+comment7.target=void\ fireRemove(int,\ int)
+comment7.text=\r\n\ \u706B\u63A5\u89E6\u5230\u602A\u517D\uFF0C\u9ED1\u7816\uFF0C\u9A6C\u91CC\u5965\u90FD\u53EF\u4EE5\u4F7F\u5176\u6D88\u9664\r\n
+comment8.params=x
+comment8.target=void\ control(int)
+comment8.text=\r\n\ \u7528\u6765\u63A7\u5236\u5EF6\u8FDF\uFF08\u589E\u52A0\u6E38\u620F\u4F53\u9A8C\uFF09\r\n
+numComments=9
