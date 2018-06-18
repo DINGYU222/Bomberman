@@ -100,7 +100,7 @@ public class Mario extends Actor
           List<Bomb>bombs=getWorld().getObjects(Bomb.class);//获取所有炸弹
          if(bombs.size()>0){
              
-          control(45);
+          control(15);
           int x=bombs.get(0).getX();
           int y=bombs.get(0).getY();
           getWorld().addObject(new Fire("up"),x,y-1);
@@ -108,10 +108,10 @@ public class Mario extends Actor
           getWorld().addObject(new Fire("right"),x+1,y);
           getWorld().addObject(new Fire("left"),x-1,y);
           getWorld().addObject(new Fire("down"),x,y+1);
-          control(3);
+          control(1);
           
           List<Fire>fires=getWorld().getObjects(Fire.class);
-          control(7);
+          control(2);
           getWorld().removeObjects(fires);
           getWorld().removeObjects(bombs);
           fireRemove(x+1,y);//右边
@@ -157,7 +157,7 @@ public class Mario extends Actor
      */
     public void control(int x){
         for(int i=1;i<=x;i++){
-            Greenfoot.delay(1);
+            Greenfoot.delay(5);
             move();
            
         }

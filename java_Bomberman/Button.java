@@ -76,7 +76,7 @@ public class Button extends Actor
      getWorld(). addObject(new BlackBrick(),2,8);
      getWorld(). addObject(new BlackBrick(),3,8);
      getWorld(). addObject(new BlackBrick(),4,8);
-     getWorld(). addObject(new BlackBrick(),6,8);
+    
      getWorld(). addObject(new BlackBrick(),8,8);
      /*
       * 添加怪兽
