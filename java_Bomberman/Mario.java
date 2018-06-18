@@ -8,7 +8,7 @@ import java.util.List;
  */
 public class Mario extends Actor
 {
-   // private int nums=0;
+    private int num;
     
     /**
      * Act - do whatever the Mario wants to do. This method is called whenever
@@ -17,12 +17,13 @@ public class Mario extends Actor
     
     public Mario(){
         setImage("06.png");
+        num=1;//马里奥个数为1
     }
     public void act() 
     {
-        move();
-        PutBomb();
-        Fire();
+        move();//移动
+        PutBomb();//放炸弹
+        Fire();//炸弹引爆
     }
     
     /*
@@ -115,6 +116,7 @@ public class Mario extends Actor
           getWorld().removeObjects(bombs);
           fireRemove(x+1,y);//右边
           fireRemove(x-1,y);//左边
+          fireRemove(x,y);//中间
           fireRemove(x,y-1);//上边
           fireRemove(x,y+1);//下边
         }
@@ -124,8 +126,7 @@ public class Mario extends Actor
       * 火接触到怪兽，黑砖，马里奥都可以使其消除
       */
      public void fireRemove(int x , int y){
-         //for(int i=0;i<4;i++)
-         //移除右边
+         if(num==1){
          List<Mario> mario=getWorld().getObjectsAt(x,y,Mario.class);
         List<BlackBrick> b_Bricks=getWorld().getObjectsAt(x,y,BlackBrick.class);
          List<Monster> monsters=getWorld().getObjectsAt(x,y,Monster.class);
@@ -135,12 +136,13 @@ public class Mario extends Actor
          
          if(mario.size()>0){
              getWorld().removeObject(mario.get(0));
+             num=0;
          }
          
          if(monsters.size()>0){
              getWorld().removeObject(monsters.get(0));
          }
-       
+        }
           
          
     
