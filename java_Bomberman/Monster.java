@@ -41,7 +41,10 @@ public class Monster extends Actor
             
             
         }
-        removeTouching(Mario.class);
+       // removeTouching(Mario.class);
+            if(isTouching(Mario.class)){
+                getWorld().addObject(new FailGame(),5,5);
+            }
     }  
      public boolean checkBrick(int x,int y){
         List<WhiteBrick> w_bricks=getWorld().getObjectsAt(x, y, WhiteBrick.class);

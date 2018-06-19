@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.util.List;
 /**
  * Write a description of class Button here.
  * 
@@ -14,7 +14,7 @@ public class Button extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public Button(String s){
-        
+        setImage("bot.png");
         show=s;
     }
     public void act() 
@@ -23,8 +23,11 @@ public class Button extends Actor
             DisplayGame();
         }
         if(Greenfoot.mouseClicked(this)&&show=="help"){
-           getWorld().setBackground("help2.png");
+          // new GreenfootImage(10,10).clear();
+            getWorld().addObject(new Help(),7,7);
            //setImage("help2.png");
+         
+          getWorld().addObject(new Button("play"),6,9);
         }
     } 
     
