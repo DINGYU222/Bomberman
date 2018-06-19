@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.List;
 /**
- * Write a description of class Mario here.
+ * 一个马里奥类
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (丁宇) 
+ * @version (2018/6/19)
  */
 public class Mario extends Actor
 {
@@ -63,7 +63,9 @@ public class Mario extends Actor
            
         }
     }
-    
+    /*
+     * 检查x，y处是否存在黑砖，白砖和炸弹。
+     */
     public boolean checkBrick(int x,int y){
         List<WhiteBrick> w_bricks=getWorld().getObjectsAt(x, y, WhiteBrick.class);
         List<BlackBrick> b_bricks=getWorld().getObjectsAt(x, y, BlackBrick.class);

@@ -1,17 +1,14 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Fire here.
+ * 为了设置火焰（炸弹爆炸后的）图像
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (丁宇) 
+ * @version (2018/6/19)
  */
 public class Fire extends Actor
 {
-    /**
-     * Act - do whatever the Fire wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+   
     public Fire(String s){
         setImage("fire"+s+".png");
     }

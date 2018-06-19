@@ -1,17 +1,14 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Help here.
+ * Help类: 为了显示游戏帮助的图像
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (丁宇) 
+ * @version (2018/6/19)
  */
 public class Help extends Actor
 {
-    /**
-     * Act - do whatever the Help wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    
     public Help(){
         setImage("help2.png");
     }
